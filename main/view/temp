@@ -1,0 +1,104 @@
+  <div class="headerCartHoverListItem">
+          <img class="headerCartHoverListItemImage" src="<?php echo WEB_PATH; ?>runtime/image/product1.jpg">
+          <p class="headerCartHoverListItemBigP">
+            Product1
+          </p>
+
+          <p class="headerCartHoverListItemBigP">
+            1X
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            $100.00
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Edit" . $this->_language]; ?>
+            </a>
+
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Remove" . $this->_language]; ?>
+            </a>
+          </p>
+        </div>
+
+
+        <div class="headerCartHoverListItem">
+
+          <img class="headerCartHoverListItemImage" src="<?php echo WEB_PATH; ?>runtime/image/product1.jpg">
+
+          <p class="headerCartHoverListItemBigP">
+            Product1
+          </p>
+
+          <p class="headerCartHoverListItemBigP">
+            1X
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            $100.00
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Edit" . $this->_language]; ?>
+            </a>
+
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Remove" . $this->_language]; ?>
+            </a>
+          </p>
+        </div>
+
+        <div class="headerCartHoverListItem">
+          <img class="headerCartHoverListItemImage" src="<?php echo WEB_PATH;?>runtime/image/product1.jpg">
+
+          <p class="headerCartHoverListItemBigP">
+            Product1
+          </p>
+
+          <p class="headerCartHoverListItemBigP">
+            1X
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            $100.00
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Edit" . $this->_language]; ?>
+            </a>
+
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Remove" . $this->_language]; ?>
+            </a>
+          </p>
+        </div>
+
+        <div class="headerCartHoverListItem">
+          <img class="headerCartHoverListItemImage" src="<?php echo WEB_PATH; ?>runtime/image/product1.jpg">
+
+          <p class="headerCartHoverListItemBigP">
+            Product1
+          </p>
+
+          <p class="headerCartHoverListItemBigP">
+            1X
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            $100.00
+          </p>
+
+          <p class="headerCartHoverListItemLittleP">
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Edit" . $this->_language]; ?>
+            </a>
+
+            <a class="headerCartHoverListItemA">
+                <?php echo $dataHeader["Remove" . $this->_language]; ?>
+            </a>
+          </p>
+        </div>

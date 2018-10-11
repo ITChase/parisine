@@ -1,0 +1,425 @@
+.loggedMsg
+{
+  color: #AF9751;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  margin: auto;
+  padding-top:200px;
+}
+
+.error
+{
+  color : red;
+  font-weight: bold;
+}
+
+.loginTitle
+{
+  padding        : 0 5px;
+  margin         : 30px auto;
+  width          : 100%;
+  max-width      : 1187px;
+  font-size      : 16px;
+  text-transform : uppercase;
+}
+
+.loginDiv
+{
+  display         : flex;
+  justify-content : space-between;
+  flex-wrap       : wrap;
+  padding         : 0 5px;
+  margin          : 0 auto;
+  width           : 100%;
+  max-width       : 1187px;
+}
+
+.loginDiv > div
+{
+  position      : relative;
+  margin-bottom : 100px;
+  padding       : 10px;
+  width         : 500px;
+  border        : #F2F2F2 1px solid;
+}
+
+.loginDivTitle
+{
+  margin-bottom  : 10px;
+  padding-bottom : 5px;
+  border-bottom  : #F2F2F2 1px solid;
+  color          : #AF9751;
+  text-transform : uppercase;
+}
+
+.loginDivDescription
+{
+  height      : 250px;
+  line-height : 200%;
+}
+
+.loginDivInputName
+{
+  display : block;
+  margin  : 0;
+  color   : inherit;
+}
+
+.loginDivInputName span
+{
+  color : red;
+}
+
+.loginDivInput
+{
+  padding       : 5px 10px;
+  width         : 100%;
+  border        : #F2F2F2 1px solid;
+  border-radius : 0;
+}
+
+.loginDivPS
+{
+  margin-top : 10px;
+  color      : #949494;
+}
+
+.loginDivPS span
+{
+  color : red;
+}
+
+.loginDivAddition
+{
+  display        : flex;
+  flex-direction : row-reverse;
+  position       : absolute;
+  bottom         : 0;
+  left           : 0;
+  padding        : 10px;
+  border-top     : #F2F2F2 2px solid;
+  width          : 100%;
+}
+
+.loginDivAddition a
+{
+  margin-left    : 20px;
+  text-transform : uppercase;
+}
+
+.loginDivAddition a:nth-child(2)
+{
+  color          : #949494;
+  text-transform : inherit;
+}
+
+h3
+{
+  color : #AF9751;
+  text-align : center;
+  text-transform: uppercase;
+  padding: 25px 0 40px 0;
+}
+
+.title_Underline
+{
+  border-bottom: 1px solid #AF9751;
+  padding: 5px 0 5px 0;
+}
+
+.register_form
+{
+  text-transform: uppercase;
+  font-size: 12.2px;
+  max-width: 1080px;
+  width: 100%;
+  margin:auto;
+  display: flex;
+}
+
+form input{
+  padding       : 5px 10px;
+  width         : 100%;
+  border        : #F2F2F2 1px solid;
+  border-radius : 0;
+}
+
+.left_col
+{
+  padding : 10px 40px 50px 30px;
+  width: 100%;
+  margin:auto;
+  flex:1;
+
+}
+
+.right_col
+{
+  padding : 10px 30px 50px 40px;
+  width:100%;
+  margin:auto;
+  flex:1;
+}
+
+.email
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.password
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.confirm-password
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.first_name
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+.middle_name
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.last_name{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.username
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.gender
+{
+  float:left;
+  margin:auto;
+  width:50%;
+  padding: 0 10px 30px 0;
+}
+
+.birthday
+{
+  float: right;
+  margin:auto;
+  width:50%;
+  padding: 0 0 30px 15px;
+}
+
+.company{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.contact_number{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.address_1{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.address_2{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.city{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.zip_code{
+  float: right;
+  margin:auto;
+  width:50%;
+  padding: 0 0 30px 15px;
+}
+.state{
+  float:left;
+  margin:auto;
+  width:50%;
+  padding: 0 10px 30px 0;
+}
+.country
+{
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+
+.submit_btn
+{
+  padding: 0 0 50px 0;
+  margin:auto;
+  text-align: center;
+}
+
+#register_btn
+{
+  border:1px solid #AF9751;
+  text-transform: uppercase;
+  font-size:12px;
+  width: 350px;
+  padding-top : 7px;
+  padding-bottom : 7px;
+  color : #000000;
+  background-color: #ffffff;
+  text-align: center;
+  margin:auto;
+}
+
+#register_btn:hover
+{
+  color : #eeeeee;
+  background-color: #AF9751;
+}
+
+.Message
+{
+  background-color: #f2f2f2;
+  color : black;
+  font-size: 15px;
+  max-width: 1080px;
+  width:100%;
+  text-align: center;
+  border-radius: 15px;
+  margin: auto;
+  padding : 20px 0 20px 0;
+}
+
+.login-Btn
+{
+  padding: 0 5px 0 5px;
+  margin:0;
+  border: none;
+  background-color : transparent;
+}
+
+.marginTemp
+{
+  padding: 10px 0 10px 0;
+}
+
+@media (max-width:768px) {
+
+  .register_form
+  {
+    flex-direction: column;
+  }
+
+  .left_col
+  {
+    margin: auto;
+    padding: 0 20px 30px 20px;
+  }
+
+  .right_col
+  {
+    margin: auto;
+    padding: 0 20px 30px 20px;
+  }
+
+  .company{
+    float:none;
+    width:100%;
+    padding: 0 0 30px 0;
+  }
+  .contact_number{
+    float: none;
+    margin:auto;
+    width:100%;
+    padding: 0 0 30px 0;
+  }
+
+  .city{
+    float:none;
+    margin:auto;
+    width:100%;
+    padding: 0 0 30px 0;
+  }
+  .zip_code{
+    float: none;
+    margin:auto;
+    width:100%;
+    padding: 0 0 30px 0;
+  }
+  .state{
+    float: none;
+    margin:auto;
+    width:100%;
+    padding: 0 0 30px 0;
+  }
+  .country
+  {
+    float: none;
+    margin:auto;
+    width:100%;
+    padding: 0 0 30px 0;
+  }
+
+  .email
+  {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+  .password
+  {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+  .first_name
+  {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+  .middle_name
+  {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+  .last_name{
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+
+  .address_1{
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+  .address_2{
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+
+  #register_btn
+  {
+    max-width: 350px;
+    width:90%;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    color : #000000;
+    background-color: #ffffff;
+    text-align: center;
+    margin:auto;
+  }
+
+}

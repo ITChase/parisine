@@ -1,0 +1,542 @@
+#addCartManager
+{
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  margin: auto;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index:1;
+  overflow: auto;
+}
+
+.modal-content
+{
+  font-size: 24px;
+  background-color: #f4f4f4;
+  margin:20% auto;
+  padding:20px;
+  width:70%;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.productPath
+{
+  display       : inline-block;
+  margin-top    : 24px;
+  margin-bottom : 34px;
+  padding-left  : calc(50% - 537px);
+}
+
+@media (max-width : 1177px)
+{
+  .productPath
+  {
+    padding-left : calc((100% / 14) - 33px);
+  }
+}
+
+@media (max-width : 997px)
+{
+  .productPath
+  {
+    padding-left : 5px;
+  }
+}
+
+.productPathDiv
+{
+  display        : inline-block;
+  color          : #949494;
+  text-transform : uppercase;
+}
+
+.productPathDivB
+{
+  display        : inline-block;
+  color          : #AF9751;
+  text-transform : uppercase;
+}
+
+.productPathArrow
+{
+  display   : inline-block;
+  padding   : 0 4px;
+  transform : scale(0.4, 1);
+  width     : 1px;
+}
+
+.productDetail
+{
+  display         : flex;
+  justify-content : space-between;
+  margin          : 0 auto;
+  padding         : 0 5px;
+  max-width       : 1187px;
+  flex-wrap       : wrap;
+}
+
+.productDetailDivA
+{
+  margin-right : 10px;
+  flex         : 15;
+}
+
+@media (max-width : 768px)
+{
+  .productDetailDivA
+  {
+    margin-right : 0;
+    flex         : 0 1 auto;
+    width        : 100%;
+  }
+}
+
+.productDetailDivB
+{
+  margin-right : 10px;
+  flex         : 30;
+}
+
+@media (max-width : 768px)
+{
+  .productDetailDivB
+  {
+    margin-top : 10px;
+  }
+}
+
+.productDetailDivC
+{
+  flex   : 1;
+  height : 14px;
+}
+
+@media (max-width : 768px)
+{
+  .productDetailDivC
+  {
+    margin-top : 15px;
+    width      : 14px;
+    transform  : rotate(90deg);
+  }
+}
+
+.productDetailDivCSticky
+{
+  display  : flex;
+  position : sticky;
+  top      : 70px;
+}
+
+.productDetailImageBackground
+{
+  position       : relative;
+  padding-bottom : 145%;
+  overflow       : hidden;
+}
+
+.productImage
+{
+  position : absolute;
+  width    : 100%;
+}
+
+.productDetailAdditionalImageDiv
+{
+  display         : flex;
+  margin-top      : 5%;
+  justify-content : space-between;
+}
+
+.productDetailAdditionalImage
+{
+  width  : 30%;
+  height : 30%;
+}
+
+.productDetailName
+{
+  margin-bottom  : 5px;
+  color          : #AF9751;
+  font-size      : 22px;
+  text-transform : uppercase;
+}
+
+.productDetailBelong
+{
+  margin-bottom : 66px;
+}
+
+.productDetailCategory
+{
+  margin-right   : 3px;
+  text-transform : uppercase;
+}
+
+.productDetailBrand
+{
+  text-transform : uppercase;
+}
+
+.productDetailSpecifications
+{
+  color : #949494;
+}
+
+.productDetailDescription
+{
+  display            : -webkit-box;
+  margin-bottom      : 50px;
+  font-family        : 'Libre Baskerville', sans-serif;
+  font-size          : 16px;
+  line-height        : 200%;
+  -webkit-box-orient : vertical;
+  -webkit-line-clamp : 11;
+  overflow           : hidden;
+  text-overflow      : ellipsis;
+}
+
+.productDetailDescription:hover
+{
+  -webkit-line-clamp : 50;
+}
+
+.productDetailMoreInfo
+{
+  padding         : 0 0 3px;
+  background      : inherit;
+  border          : none;
+  border-bottom   : #949494 1px solid;
+  width           : 66px;
+  color           : #949494;
+  text-transform  : uppercase;
+  text-decoration : none !important;
+}
+
+.productDetailPrice
+{
+  color       : #AF9751;
+  font-family : 'Raleway', sans-serif;
+  font-size   : 22px;
+}
+
+.productDetailAvailability
+{
+  text-transform : uppercase;
+}
+
+#productDetailOutOfStock
+{
+  display        : none;
+  text-transform : uppercase;
+  margin-bottom  : 20px;
+}
+
+.productDetailStockNotified
+{
+  display  : table;
+  position : relative;
+  width    : 252px;
+}
+
+.productDetailStockInput
+{
+  border        : 2px solid #AF9751;
+  border-radius : 0;
+  padding       : 6px 12px;
+  height        : 33px;
+  width         : 100%;
+  outline       : none;
+}
+
+.productDetailAddOnBlack
+{
+  position   : absolute;
+  right      : 0;
+  background : #AF9751 url(/runtime/image/footerArrowBlack.png) center/10px no-repeat;
+  border     : 2px solid #AF9751;
+  width      : 33px;
+  height     : 33px;
+  transition : background-image .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.productDetailAddOnBlack:hover
+{
+  background      : url(/runtime/image/footerArrowGold.png) center no-repeat;
+  background-size : 10px;
+  outline         : none;
+}
+
+.productDetailAddOnWhite
+{
+  position   : absolute;
+  right      : 0;
+  background : #AF9751 url(/runtime/image/footerArrowWhite.png) center/10px no-repeat;
+  border     : 2px solid #AF9751;
+  width      : 33px;
+  height     : 33px;
+  transition : background-image .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.productDetailAddOnWhite:hover
+{
+  background : url(/runtime/image/footerArrowGold.png) center/10px no-repeat;
+  outline    : none;
+}
+
+#productDetailInStock
+{
+  position      : relative;
+  margin-top    : 20px;
+  margin-bottom : 10px;
+}
+
+#productDetailQuantity
+{
+  width              : 35px;
+  height             : 38px;
+  border             : #DBDBDB 2px solid;
+  border-radius      : 0;
+  margin-right       : 30px;
+  font-size          : 16px;
+  text-align         : center;
+  -webkit-appearance : none;
+}
+
+#productDetailAdd
+{
+  top : 0;
+}
+
+#productDetailMinus
+{
+  bottom    : 0;
+  transform : rotateX(180deg);
+}
+
+#productDetailAdd, #productDetailMinus
+{
+  position   : absolute;
+  left       : 37px;
+  width      : 14px;
+  height     : 18px;
+  background : url("/runtime/image/productDetailArrow.png") center/8px no-repeat;
+  color      : #DBDBDB;
+  border     : #DBDBDB 2px solid;
+}
+
+.productDetailAddToCart
+{
+  width            : 146px;
+  height           : 38px;
+  background-color : #AF9751;
+  border           : none;
+  color            : white;
+  font-size        : 16px;
+  text-transform   : uppercase;
+}
+
+.productDetailController
+{
+  display : inline-flex;
+}
+
+@media (max-width : 768px)
+{
+  .productDetailController
+  {
+    display : block;
+  }
+}
+
+.productDetailWishList
+{
+  margin-right   : 20px;
+  padding-left   : 20px;
+  background     : url("/runtime/image/productDetailWishList.png") left top 3px/14px no-repeat;
+  border         : none;
+  text-transform : uppercase;
+}
+
+.productDetailCompare
+{
+  margin-right   : 20px;
+  padding-left   : 20px;
+  background     : url("/runtime/image/productDetailCompare.png") left top 3px/14px no-repeat;
+  border         : none;
+  text-transform : uppercase;
+}
+
+.productDetailEmailToAFriend
+{
+  margin-right   : 20px;
+  padding-left   : 20px;
+  background     : url("/runtime/image/productDetailEmail.png") left top 4px/14px no-repeat;
+  border         : none;
+  text-transform : uppercase;
+  white-space    : nowrap;
+}
+
+@media (max-width : 768px)
+{
+  .productDetailWishList, .productDetailCompare, .productDetailEmailToAFriend
+  {
+    margin-right  : 0;
+    margin-bottom : 30px;
+  }
+}
+
+.at-share-btn-elements
+{
+  display         : flex;
+  justify-content : center;
+}
+
+@media (max-width : 768px)
+{
+  .at-share-btn-elements
+  {
+    justify-content : flex-start;
+  }
+}
+
+.productDetailPrevious
+{
+  margin-right   : 5px;
+  padding-right  : 5px;
+  border-right   : #F2F2F2 1px solid;
+  color          : #949494;
+  text-transform : uppercase;
+}
+
+@media (max-width : 768px)
+{
+  .productDetailPrevious
+  {
+    margin-right  : 20px;
+    padding-right : 20px;
+  }
+}
+
+.productDetailNext
+{
+  width          : calc(50% - 2px);
+  color          : #949494;
+  text-transform : uppercase;
+}
+
+#productDescription
+{
+  display         : flex;
+  justify-content : space-between;
+  margin          : 0 auto;
+  padding         : 0 5px;
+  max-width       : 1187px;
+}
+
+.productDescriptionOlfactoryPyramid
+{
+  padding-top  : 70px;
+  margin-right : 20px;
+  flex         : 1;
+}
+
+.productDescriptionOlfactoryPyramidTitle, .productDescriptionHowToUseTitle
+{
+  padding-bottom : 15px;
+  border-bottom  : #F2F2F2 1px solid;
+  font-weight    : 600;
+  font-size      : 16px;
+  color          : #949494;
+  text-transform : uppercase;
+  text-align     : center;
+}
+
+.productDescriptionOlfactoryPyramidPA
+{
+  margin-top     : 20px;
+  font-weight    : 600;
+  font-size      : 16px;
+  text-transform : uppercase;
+}
+
+.productDescriptionOlfactoryPyramidPB
+{
+  text-transform : uppercase;
+}
+
+.productDescriptionHowToUse
+{
+  padding-top : 70px;
+  flex        : 1;
+}
+
+.productDescriptionHowToUseText
+{
+  text-align: center;
+  margin-top  : 20px;
+  line-height : 200%;
+}
+
+.productRelatedList
+{
+  display         : flex;
+  justify-content : space-between;
+  flex-wrap       : wrap;
+  margin          : 0 auto;
+  padding         : 0 5px;
+  max-width       : 1187px;
+}
+
+.productRelatedProductTitle
+{
+  margin-top     : 100px;
+  margin-bottom  : 60px;
+  width          : 100%;
+  text-transform : uppercase;
+  text-align     : center;
+  font-weight    : 600;
+  font-size      : 16px;
+}
+
+.productRelatedProduct
+{
+  margin-bottom : 10%;
+  width         : 23%;
+}
+
+.productRelatedProductImage
+{
+  width : 100%;
+}
+
+.productRelatedProductName
+{
+  margin-top     : 20px;
+  color          : #AF9751;
+  font-weight    : 600;
+  font-size      : 16px;
+  text-transform : uppercase;
+  overflow       : hidden;
+  white-space    : nowrap;
+  text-overflow  : ellipsis;
+}
+
+.productRelatedProductDescription
+{
+  font-family   : 'Libre Baskerville', sans-serif;
+  overflow      : hidden;
+  white-space   : nowrap;
+  text-overflow : ellipsis;
+}
+
+.productRelatedProductPrice
+{
+  margin-top : 20px;
+  font-size  : 13px;
+}
